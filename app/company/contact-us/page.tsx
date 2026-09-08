@@ -151,7 +151,10 @@ export default function Home() {
           text-2xl
           sm:text-3xl
           md:text-4xl
-          lg:text-4xl
+          lg:text-[21px]
+          lg:px-10
+          xl:px-10
+          2xl:px-20
           xl:text-[48px]
           leading-tight
           font-medium
