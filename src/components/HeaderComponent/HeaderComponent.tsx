@@ -86,7 +86,7 @@ const HeaderComponent = ({ active }: HeaderProps) => {
                     }
   `}
             >
-                <div className="w-full h-full flex items-center justify-between gap-4 px-4 md:px-6 lg:px-10 lg:justify-center lg:gap-8 xl:gap-12 2xl:gap-16">
+                <div className="w-full h-full flex items-center justify-between gap-4 px-4 md:px-6 lg:px-10 lg:justify-center lg:gap-10 xl:gap-12 2xl:gap-28">
                     {/* Logo */}
                     <Image
                         src={icon}
