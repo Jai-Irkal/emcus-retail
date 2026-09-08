@@ -4,7 +4,7 @@ export const OPEN_ROLES = [
         role:"Software Quality Engineer",
         location: "Bengaluru, India",
         role_type:"Full Time",
-        preferredDomain: "Fire Safety",
+        preferredDomain: "Retail Industry",
         reportsTo:"Engineering Manager",
         experienceRequired:"4-5",
         eduacation:"Diploma/B.E (Electronics & Communication)",
@@ -25,7 +25,7 @@ export const OPEN_ROLES = [
             'Hands on working with DSO, multimeter, soldering stations, etc.',
             'Hands on experience in setting up test benches for testing.',
             'Create test reports & track bugs & retest the released software.',
-            'Fair knowledge on fire safety domain & working fire panel development.',
+            'Fair knowledge on Retail Industry domain.',
             'Maintaining release software & providing support to the team by using version management tools.'
         ]
     },
@@ -34,7 +34,7 @@ export const OPEN_ROLES = [
         role:"Lead Firmware Engineer",
         role_type:"Full Time",
         location: "Bengaluru, India",
-        preferredDomain: "Fire Safety",
+        preferredDomain: "Retail Industry",
         reportsTo:"Engineering Manager",
         experienceRequired:"4-5",
         eduacation:"Diploma/B.E (Electronics & Communication)",
@@ -56,7 +56,7 @@ export const OPEN_ROLES = [
             'Hands on experience in module design & development like RTC, EEPROM, Graphic LCD, Keypad drivers, etc.',
             'Experience in RTOS concepts & hands on with any RTOS like CMX, Free RTOS, etc.',
             'Practical exposure to handling DSO/Multimeters, etc.',
-            'Fair knowledge of fire safety domain & working fire panel development.'
+            'Fair knowledge of Retail Industry domain.'
         ]
     },
     {
@@ -64,7 +64,7 @@ export const OPEN_ROLES = [
         role:"Firmware Engineer",
         role_type:"Full Time",
         location: "Bengaluru, India",
-        preferredDomain: "Fire Safety",
+        preferredDomain: "Retail Industry",
         reportsTo:"Engineering Manager",
         experienceRequired:"3-5",
         eduacation:"Diploma/B.E (Electronics & Communication)",
@@ -85,7 +85,7 @@ export const OPEN_ROLES = [
             'Hands on experience in module design & development like RTC, EEPROM, Graphic LCD, Keypad drivers, etc.',
             'Experience in RTOS concepts & hands on with any RTOS like CMX, Free RTOS, etc.',
             'Practical exposure to handling DSO/Multimeters, etc.',
-            'Fair knowledge of fire safety domain & working fire panel development.'
+            'Fair knowledge of Retail Industry domain.'
         ]
     },
 ]
