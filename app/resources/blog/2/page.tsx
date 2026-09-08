@@ -192,7 +192,7 @@ export default function BlogTwo() {
                                 />
                             </button>
 
-                            <h1 className="text-[21px] font-bold text-[#111] uppercase leading-tight">
+                            <h1 className="text-[21px] font-bold text-[#333] uppercase leading-tight">
                                 {blog.title}
                             </h1>
 
@@ -212,68 +212,56 @@ export default function BlogTwo() {
                             />
                         </div>
 
-                        <div
-                            className="
-                                mt-5
-                                text-[16px]
-                                text-[#222]
-                                leading-[1.55]
-                            "
-                        >
+                        {/* Static Content */}
+                        <div className="space-y-6 text-[#333] leading-relaxed mt-4 text-[16px]">
 
-                            {/* Intro */}
-                            <p className="mb-5">
-                                Developing fire panels is a challenging task due to their multiple interfaces and real-time requirements to comply with regulations, such as alarm notification and output activation. Consequently, the software development cycle for fire panels is lengthy, with a significant portion dedicated to testing and bug fixing.
+                            <p>
+                                As the retail and inventory landscape continues to evolve, an increasing number of electronic devices are being deployed in stores to prevent losses and gather shopper analytics. One of the ongoing challenges for OEMs and solution providers is maintaining and troubleshooting these devices, especially as customer needs shift and software updates become necessary.
+                            </p>
+                            <p>
+                                Traditionally, this equipment relied on industrial-standard interfaces like USB-Serial, requiring on-site visits from service professionals. This often led to additional costs associated with truck rollouts.
+                            </p>
+                            <p>
+                                However, with most modern equipment now running on updated software stacks, remote access via web interfaces has become feasible—significantly reducing the need for physical service visits.
+                            </p>
+                            <p>
+                                Partners like EMCUS Technology bring deep expertise in enabling configuration capabilities on headless devices by integrating lightweight web servers.
                             </p>
 
-                            <p className="mb-5">
-                                Traditionally, most development was carried out on physical hardware setups, which often suffered from limitations and were unable to replicate real-world scenarios. As a result, software testing cycles were frequently incomplete, leading to poor software quality and substantial rework costs.
-                            </p>
+                            <div className="space-y-4 text-[16px]">
 
-                            <p className="mb-5">
-                                However, recent advancements in electronics, off-the-shelf modules, components, and partnerships with companies like EMCUS Technologies have brought about new possibilities in the market. These developments allow for the rapid and reliable creation of custom simulators and testing equipment.
-                            </p>
+                                <div>
+                                    <h3 className="font-semibold text-[16px]">Embedding Modern Software Stack into Each Device Involves: </h3>
+                                    <p>
+                                        1. Selecting an appropriate lightweight web server.
+                                    </p>
+                                    <p>
+                                        2. Developing RESTful APIs to interact with the configuration database
+                                    </p>
+                                    <p>
+                                        3. Creating a rich graphical user interface and integrating it with the REST APIs
+                                    </p>
+                                    <p className="mt-2">
+                                        With this modern architecture, service professionals can perform most tasks remotely, eliminating the need for on-site visits
+                                    </p>
+                                </div>
+                                <div className="text-[16px]">
+                                    <h3 className="font-semibold">The remote capabilities include: </h3>
+                                    <p>
+                                        1. Monitoring device health
+                                    </p>
+                                    <p>
+                                        2. Collecting diagnostic logs
+                                    </p>
+                                    <p>
+                                        3. Commissioning and configuring devices
+                                    </p>
+                                    <p>
+                                        4. Performing software upgrades
+                                    </p>
+                                </div>
 
-                            <p className="mb-5">
-                                Incorporating this equipment into the software development process can help ensure software quality from the early stages. For example, protocol simulators can be utilized to test various fire alarm and loop loading conditions. Some of the tests that can be performed using loop/SLC circuit simulators include:
-                            </p>
-
-                            {/* Bullet Points */}
-                            <ul className="list-disc pl-6 space-y-2 mb-5 text-[18px]">
-                                <li>Alarms reporting</li>
-                                <li>Prioritization of alarms</li>
-                                <li>SLC loop loading conditions</li>
-                                <li>Fire panel LCD strings</li>
-                                <li>Cause and effect logic</li>
-                                <li>Loop or SLC fault conditions</li>
-                                <li>Performance tests of fire panels</li>
-                                <li>OEM protocol testing</li>
-                            </ul>
-
-                            <p className="mb-5">
-                                Moreover, these protocol simulators can also serve commissioning teams by enabling viability tests of fire panels before actual installation in a building. This approach significantly reduces labor costs by resolving issues that would typically require troubleshooting post installation.
-                            </p>
-
-                            <p className="mb-5">
-                                Furthermore, these simulators can facilitate long-term test automation of fire alarm software and hardware verification. They offer a general architecture for a protocol simulator, as depicted below.
-                            </p>
-
-                            {/* =================================================
-                                PROTOCOL SIMULATOR IMAGE
-                            ================================================= */}
-
-                            <div className="relative w-full max-w-[720px] h-[300px] sm:h-[340px] lg:h-[380px] rounded-lg overflow-hidden">
-                                <Image
-                                    src={BlogImg}
-                                    alt={blog.title}
-                                    fill
-                                    className="object-contain"
-                                />
                             </div>
-
-                            <span className="italic block mt-2">
-                                General architecture for protocol simulator
-                            </span>
 
                             {/* =================================================
                                 TAGS + SHARE
@@ -293,7 +281,7 @@ export default function BlogTwo() {
                                         {blog.tags.map((tag) => (
                                             <span
                                                 key={tag}
-                                                className="px-2 font-semibold py-1 rounded-[3px] border border-[#E34334] text-[#E34334] bg-[#FFF2F2] text-[16px] leading-none"
+                                                className="px-2 font-semibold py-1 rounded-[3px] border border-[#2D7DBA] text-[#2D7DBA] bg-[#F1F9FF] text-[16px] leading-none"
                                             >
                                                 {tag.charAt(0).toUpperCase() +
                                                     tag.slice(1)}
@@ -425,7 +413,7 @@ export default function BlogTwo() {
                                                 text-[14px]
                                                 mb-2
                                                 focus:outline-none
-                                                focus:border-[#322986]
+                                                focus:border-[#2D7DBA]
                                                 disabled:opacity-50
                                                 disabled:cursor-not-allowed
                                             "
@@ -464,7 +452,7 @@ export default function BlogTwo() {
                                                 disabled:cursor-not-allowed
                                                 ${commentForm.email.trim() !== "" && !isEmailValid
                                                     ? "border-[#E34334] focus:border-[#E34334]"
-                                                    : "border-[#64748B] focus:border-[#322986]"
+                                                    : "border-[#64748B] focus:border-[#2D7DBA]"
                                                 }
                                             `}
                                         />
@@ -481,7 +469,7 @@ export default function BlogTwo() {
                                                 type="checkbox"
                                                 checked={saveDetails}
                                                 onChange={(e) => setSaveDetails(e.target.checked)}
-                                                className="mt-[1px] w-[12px] h-[12px] accent-[#E34334]"
+                                                className="mt-[1px] w-[12px] h-[12px] accent-[#2D7DBA]"
                                             />
 
                                             <span>
@@ -504,7 +492,7 @@ export default function BlogTwo() {
                                             type="button"
                                             onClick={handleSubmitComment}
                                             disabled={!isCommentFormValid || isSubmitting}
-                                            className="cursor-pointer w-full h-[40px] rounded-[8px] bg-[#E34334] text-white text-[16px] font-medium hover:bg-[#BE392D] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#E34334] flex items-center justify-center gap-2"
+                                            className="cursor-pointer w-full h-[40px] rounded-[8px] bg-[#2D7DBA] text-white text-[16px] font-medium hover:bg-[#276CA0] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#2D7DBA] flex items-center justify-center gap-2"
                                         >
                                             {isSubmitting ? (
                                                 <>
@@ -558,7 +546,7 @@ export default function BlogTwo() {
                                 items-center
                                 justify-center
                                 rounded-full
-                                bg-[#322986]
+                                bg-[#2D7DBA]
                                 text-lg
                                 font-bold
                                 text-white

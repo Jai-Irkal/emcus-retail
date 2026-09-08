@@ -196,7 +196,7 @@ export default function BlogThree() {
                                 />
                             </button>
 
-                            <h1 className="text-[21px] font-bold text-[#111] uppercase leading-tight">
+                            <h1 className="text-[21px] font-bold text-[#333] uppercase leading-tight">
                                 {blog.title}
                             </h1>
                         </div>
@@ -219,61 +219,50 @@ export default function BlogThree() {
                             ARTICLE CONTENT
                         ===================================================== */}
 
-                        <div
-                            className="
-                                mt-5
-                                text-[16px]
-                                text-[#222]
-                                leading-[1.55]
-                            "
-                        >
+                        <div className="space-y-6 text-[#333] leading-relaxed mt-4">
 
-                            {/* Intro */}
-                            <p className="mb-5">
-                                Fire panels are essential life safety products that adhere to specific standards in different countries, ensuring they meet stringent safety and performance requirements. Some of the prominent standards governing fire panels include:
+                            <p>
+                                Retailers increasingly rely on connected electronic equipment to enable loss prevention, customer insights, and seamless operations. As these deployments scale across hundreds or thousands of locations, managing this growing "fleet" of devices becomes complex and resource-intensive. This blog explores the challenges of retail equipment fleet management and outlines modern, scalable solutions to streamline operations, reduce costs, and improve uptime.
+                            </p>
+                            <p>
+                                The modern retail environment is driven by data and automation. Devices such as fixed RFID readers, POS systems, Exit pedestals, digital signage, security cameras, and environmental sensors play a critical role in store operations.
                             </p>
 
-                            {/* Standards Bullet List */}
-                            <section className="mb-6">
-                                <ul className="list-disc pl-6 space-y-2 text-[18px]">
-                                    <li>NFPA 72</li>
-                                    <li>EN 54</li>
-                                    <li>UL 864</li>
-                                    <li>ULC-S527</li>
-                                    <li>BS 5839</li>
-                                    <li>AS 7240</li>
-                                    <li>ISO 7240</li>
-                                </ul>
-                            </section>
+                            <div className="space-y-4">
 
-                            <p className="mb-5">
-                                During the design phase of fire panels, all necessary standard requirements must be considered, including hardware, software, firmware, and mechanical aspects. Companies like EMCUS Technologies can help with development and certification, ensuring compliance with standards and a streamlined approval process.
-                            </p>
-
-                            <p className="mb-5">
-                                The critical communication fast path for fire panels involves achieving an output activation delay of 3 to 10 seconds. Fire alarm panels often integrate cross-branding with different loop/SLC protocols, leading to various OEM branding combinations.
-                            </p>
-
-                            <p className="font-bold mb-4">
-                                Various certification bodies, such as:
-                            </p>
-
-                            {/* Certification Bodies */}
-                            <section className="mb-6">
-                                <ul className="list-disc pl-6 space-y-2 text-[18px]">
-                                    <li>Underwriters Laboratories (UL)</li>
-                                    <li>Intertek</li>
-                                    <li>BAFE</li>
-                                    <li>LPCB</li>
-                                    <li>FM Approvals</li>
-                                    <li>CSA Group</li>
-                                    <li>VdS</li>
-                                </ul>
-                            </section>
-
-                            <p className="mb-7">
-                                play crucial roles in evaluating and certifying fire panels for compliance with safety standards. These certifications are crucial for fire safety professionals, building owners, and authorities to ensure the panels’ reliability during emergencies.
-                            </p>
+                                <div>
+                                    <h3 className="font-bold text-[21px]">Challenges in managing these devices across distributed locations: </h3>
+                                    <ul className="list-disc pl-5 space-y-1 text-[16px]">
+                                        <li>Device configuration and provisioning</li>
+                                        <li>Remote monitoring and diagnostics</li>
+                                        <li>Software/firmware upgrades</li>
+                                        <li>Asset tracking and maintenance</li>
+                                        <li>Cost and labor associated with on-site servicing</li>
+                                    </ul>
+                                    <p className="mt-2">
+                                        Without a centralized fleet management strategy, retailers risk increased downtime, higher service costs, and inconsistent performance.
+                                    </p>
+                                    <h3 className="font-bold text-[20px] mt-4">Challenges faced by retailers today are: </h3>
+                                    <div>
+                                        <h3 className="font-semibold">1. Manual Configuration and Setup</h3>
+                                        <p>
+                                            Historically, most retail equipment required on-site configuration via USB or serial interfaces. This approach lacks scalability and incurs high labor costs.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 className="font-semibold">2. Limited Remote Access</h3>
+                                        <p>
+                                            Many devices were not designed for remote diagnostics or updates, making even minor issues require costly truck rolls.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <h3 className="font-semibold">3. Data Silos</h3>
+                                        <p>
+                                            Disconnected systems across stores make it difficult to track device performance, usage, and faults at a fleet-wide level.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
 
                             {/* ===================================================
                                 TAGS + SHARE
@@ -291,7 +280,7 @@ export default function BlogThree() {
                                         {blog.tags.map((tag) => (
                                             <span
                                                 key={tag}
-                                                className="px-2 font-semibold py-1 rounded-[3px] border border-[#E34334] text-[#E34334] bg-[#FFF2F2] text-[16px] leading-none"
+                                                className="px-2 font-semibold py-1 rounded-[3px] border border-[#2D7DBA] text-[#2D7DBA] bg-[#F1F9FF] text-[16px] leading-none"
                                             >
                                                 {tag.charAt(0).toUpperCase() +
                                                     tag.slice(1)}
@@ -355,7 +344,7 @@ export default function BlogThree() {
                             =================================================== */}
 
                             <section className="mt-4">
-                                <h2 className="text-[18px] font-semibold text-[#222] mb-2">
+                                <h2 className="text-[16px] font-semibold text-[#222] mb-2">
                                     Leave a Reply{" "}
                                     <span className="text-[14px] font-normal text-[#E34334] [font-family:var(--font-jakarta-sans)]">
                                         *
@@ -374,14 +363,14 @@ export default function BlogThree() {
                                             }
                                             placeholder="Type your comment here"
                                             disabled={isSubmitting}
-                                            className="w-full h-[205px] md:h-[230px] lg:h-[218px] resize-none rounded-[3px] border border-[#64748B] bg-[#F7F8F9] px-2 py-2 text-[16px] text-[#333333] placeholder:text-[#333333] focus:outline-none focus:border-[#322986] disabled:opacity-50 disabled:cursor-not-allowed"
+                                            className="w-full h-[205px] md:h-[230px] lg:h-[222px] resize-none rounded-[3px] border border-[#64748B] bg-[#F7F8F9] px-2 py-2 text-[16px] text-[#333333] placeholder:text-[#333333] focus:outline-none focus:border-[#2D7DBA] disabled:opacity-50 disabled:cursor-not-allowed"
                                         />
                                     </div>
 
                                     {/* Reply Form */}
                                     <div className="flex flex-col">
 
-                                        <p className="text-[12px] text-[#222] font-bold leading-[1.25] mb-1">
+                                        <p className="text-[12px] text-[#333] font-bold leading-[1.25] mb-1">
                                             Your email address will not be
                                             published. Required fields are
                                             marked
@@ -391,7 +380,7 @@ export default function BlogThree() {
                                         </p>
 
                                         {/* Name */}
-                                        <label className="text-[14px] mb-[2px] font-semibold">
+                                        <label className="text-[16px] mb-[2px] font-semibold">
                                             Name{" "}
                                             <span className="text-[#E34334]">
                                                 *
@@ -413,7 +402,7 @@ export default function BlogThree() {
                                         />
 
                                         {/* Email */}
-                                        <label className="text-[14px] text-[#222] mb-[2px] font-semibold">
+                                        <label className="text-[16px] text-[#222] mb-[2px] font-semibold">
                                             Email{" "}
                                             <span className="text-[#E34334]">
                                                 *
@@ -433,7 +422,7 @@ export default function BlogThree() {
                                             disabled={isSubmitting}
                                             className={`w-full h-[30px] rounded-[2px] bg-[#F7F8F9] border px-2 text-[14px] mb-1 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed ${commentForm.email.trim() !== "" && !isEmailValid
                                                 ? "border-[#E34334] focus:border-[#E34334]"
-                                                : "border-[#64748B] focus:border-[#322986]"
+                                                : "border-[#64748B] focus:border-[#2D7DBA]"
                                                 }`}
                                         />
                                         {commentForm.email.trim() !== "" && !isEmailValid && (
@@ -448,7 +437,7 @@ export default function BlogThree() {
                                                 type="checkbox"
                                                 checked={saveDetails}
                                                 onChange={(e) => setSaveDetails(e.target.checked)}
-                                                className="mt-[1px] w-[12px] h-[12px] accent-[#E34334]"
+                                                className="mt-[1px] w-[12px] h-[12px] accent-[#2D7DBA]"
                                             />
 
                                             <span>
@@ -469,7 +458,7 @@ export default function BlogThree() {
                                             type="button"
                                             onClick={handleSubmitComment}
                                             disabled={!isCommentFormValid || isSubmitting}
-                                            className="cursor-pointer w-full h-[40px] rounded-[8px] bg-[#E34334] text-white text-[16px] font-medium hover:bg-[#BE392D] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#E34334] flex items-center justify-center gap-2"
+                                            className="cursor-pointer w-full h-[40px] rounded-[8px] bg-[#2D7DBA] text-white text-[16px] font-medium hover:bg-[#266DA3] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#2D7DBA] flex items-center justify-center gap-2"
                                         >
                                             {isSubmitting ? (
                                                 <>
@@ -523,7 +512,7 @@ export default function BlogThree() {
                                 items-center
                                 justify-center
                                 rounded-full
-                                bg-[#322986]
+                                bg-[#2D7DBA]
                                 text-lg
                                 font-bold
                                 text-white

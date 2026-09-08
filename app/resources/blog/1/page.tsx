@@ -192,7 +192,7 @@ export default function BlogOne() {
                 />
               </button>
 
-              <h1 className="text-[21px] font-bold text-[#111] uppercase leading-tight">
+              <h1 className="text-[21px] font-bold text-[#333] uppercase leading-tight">
                 {blog.title}
               </h1>
             </div>
@@ -213,56 +213,56 @@ export default function BlogOne() {
             {/* =====================================================
                 ARTICLE CONTENT
             ===================================================== */}
-            <div className="space-y-6 text-gray-700 leading-relaxed mt-6">
+            <div className="space-y-6 text-[#333333] leading-relaxed mt-6">
 
-              <p>
+              <p className="text-[16px]">
                 Cycle counting is a labor-intensive task in both retail and back-office operations, essential for keeping inventory records accurate and up to date. While mobile RFID readers are commonly used for this process, they often yield incomplete or inaccurate data.
               </p>
-              <p>
+              <p className="text-[16px]">
                 A more effective alternative is the deployment of fixed RFID readers at strategic locations—such as shelves and store or warehouse exits—to capture real-time updates on product movement. Unlike handheld devices, fixed RFID readers continuously scan for RAIN RFID-tagged items without the need for manual intervention. This enables automated, real-time inventory tracking, giving retailers precise visibility into product quantities and locations at any moment.
               </p>
 
-              <p>
+              <p className="text-[16px]">
                 By leveraging antennas that read passive RFID tags, fixed readers can collect data continuously and transmit it to inventory management platforms, ensuring timely updates and synchronization of inventory records.
               </p>
 
               {/* Subheading 1 */}
-              <h2 className="text-2xl font-bold text-[#0071bc]">
+              <h2 className="text-[21px] font-bold text-[#2D7DBA]">
                 Key benefits of using fixed RFID readers 
               </h2>
 
-              <div className="space-y-4">
+              <div className="space-y-4 text-[16px] text-[#333333]">
 
                 <div>
                   <h3 className="font-semibold">1. Reduced Labour Costs</h3>
-                  <p>
+                  <p className="text-[16px]">
                     Automation eliminates the need for manual scanning, leading to significant cost savings.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-semibold">2. Enhanced Accuracy</h3>
-                  <p>
+                  <p className="text-[16px]">
                     Strategically placed and calibrated readers and antennas improve the precision of inventory tracking.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-semibold">3. Real-time or scheduled updates</h3>
-                  <p>
+                  <p className="text-[16px]">
                     Inventory status can be refreshed instantly or at predefined intervals for better visibility.
                   </p>
                 </div>
 
                 <div>
                   <h3 className="font-semibold">4. Optimized inventory management</h3>
-                  <p>
+                  <p className="text-[16px]">
                     Supports just-in-time replenishment, reduces stockouts, and improves overall supply chain efficiency.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold">5. Improved shrinkage detection</h3>
-                  <p>
+                  <p className="text-[16px]">
                     Enables faster identification of inventory loss or theft by monitoring product movement continuously.
                   </p>
                 </div>
@@ -270,7 +270,7 @@ export default function BlogOne() {
               </div>
 
               {/* Ending Paragraph */}
-              <p className="italic font-bold">
+              <p className="italic font-bold text-[16px]">
                 With help of partners like EMCUS Retail and UHF RFID OEM one can build custom use cases and deploy seamlessly into customers sites.
               </p>
 
@@ -288,7 +288,7 @@ export default function BlogOne() {
                     {blog.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="px-2 font-semibold py-1 rounded-[3px] border border-[#E34334] text-[#E34334] bg-[#FFF2F2] text-[16px] leading-none"
+                        className="px-2 font-semibold py-1 rounded-[3px] border border-[#2D7DBA] text-[#2D7DBA] bg-[#F1F9FF] text-[16px] leading-none"
                       >
                         {tag.charAt(0).toUpperCase() + tag.slice(1)}
                       </span>
@@ -408,7 +408,7 @@ export default function BlogOne() {
                       disabled={isSubmitting}
                       className={`w-full h-[30px] rounded-[2px] bg-[#F7F8F9] border px-2 text-[14px] mb-1 focus:outline-none disabled:opacity-50 disabled:cursor-not-allowed ${commentForm.email.trim() !== "" && !isEmailValid
                         ? "border-[#E34334] focus:border-[#E34334]"
-                        : "border-[#64748B] focus:border-[#322986]"
+                        : "border-[#64748B] focus:border-[#2D7DBA]"
                         }`}
                     />
                     {commentForm.email.trim() !== "" && !isEmailValid && (
@@ -423,7 +423,7 @@ export default function BlogOne() {
                         type="checkbox"
                         checked={saveDetails}
                         onChange={(e) => setSaveDetails(e.target.checked)}
-                        className="mt-[1px] w-[12px] h-[12px] accent-[#E34334]"
+                        className="mt-[1px] w-[12px] h-[12px] accent-[#2D7DBA]"
                       />
 
                       <span>
@@ -443,7 +443,7 @@ export default function BlogOne() {
                       type="button"
                       onClick={handleSubmitComment}
                       disabled={!isCommentFormValid || isSubmitting}
-                      className="cursor-pointer w-full h-[40px] rounded-[8px] bg-[#E34334] text-white text-[16px] font-medium hover:bg-[#BE392D] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#E34334] flex items-center justify-center gap-2"
+                      className="cursor-pointer w-full h-[40px] rounded-[8px] bg-[#2D7DBA] text-white text-[16px] font-medium hover:bg-[#23679B] transition-colors disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-[#3B9BE4] flex items-center justify-center gap-2"
                     >
                       {isSubmitting ? (
                         <>
@@ -496,7 +496,7 @@ export default function BlogOne() {
                                 items-center
                                 justify-center
                                 rounded-full
-                                bg-[#322986]
+                                bg-[#2D7DBA]
                                 text-lg
                                 font-bold
                                 text-white

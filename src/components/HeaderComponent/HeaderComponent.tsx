@@ -68,103 +68,102 @@ const HeaderComponent = ({ active }: HeaderProps) => {
             {/* HEADER */}
             <div
                 className={`
-                    bg-white 
-                    w-full 
-                    fixed 
-                    top-0 
-                    left-0 
-                    right-0 
-                    z-50 
-                    overflow-visible 
-                    flex 
-                    items-center 
-                    justify-between 
-                    px-4 
-                    md:px-6 
-                    lg:px-10 
-                    shadow-sm 
-                    xl:px-10
-                    2xl:px-90 
-                    transition-all 
-                    duration-300 ${isScrolled && !isOpen ? "h-[60px] md:h-[70px]" : "h-[80px] md:h-[90px]"}`}
+    bg-white
+    w-full
+    fixed
+    top-0
+    left-0
+    right-0
+    z-50
+    overflow-visible
+    shadow-b-sm
+    transition-all
+    duration-300
+    2xl:w-[65.8%] 2xl:mx-auto
+    ${isScrolled && !isOpen
+                        ? "h-[60px] md:h-[70px]"
+                        : "h-[80px] md:h-[90px]"
+                    }
+  `}
             >
-
-                {/* Logo */}
-                <Image
-                    src={icon}
-                    alt="Emcus Logo"
-                    className={`transition-all duration-300 
+                <div className="w-full h-full flex items-center justify-between gap-4 px-4 md:px-6 lg:px-10 lg:justify-center lg:gap-8 xl:gap-12 2xl:gap-16">
+                    {/* Logo */}
+                    <Image
+                        src={icon}
+                        alt="Emcus Logo"
+                        className={`shrink-0 transition-all duration-300 
                         ${isScrolled && !isOpen
-                            ? "w-[100px] md:w-[120px] lg:w-[140px]"
-                            : "w-[130px] md:w-[160px] lg:w-[180px]"
-                        }`}
-                    priority
-                />
+                                ? "w-[100px] md:w-[120px] lg:w-[140px]"
+                                : "w-[130px] md:w-[160px] lg:w-[180px]"
+                            }`}
+                        priority
+                    />
 
-                {/* Desktop Menu */}
-                {/* Desktop Navigation */}
-                <div className="relative z-20 hidden h-full items-center gap-1 lg:flex">
-                    {NAVIGATION.map((group) => {
-                        if (group.title === "MAIN") {
-                            return group.items.map((item) => {
-                                if (item.children) {
+                    {/* Desktop Menu */}
+                    {/* Desktop Navigation */}
+                    <div className="relative z-20 hidden h-full min-w-max items-center gap-1 lg:flex">
+                        {NAVIGATION.map((group) => {
+                            if (group.title === "MAIN") {
+                                return group.items.map((item) => {
+                                    if (item.children) {
+                                        return (
+                                            <DesktopDropdown
+                                                key={item.label}
+                                                title={item.label}
+                                                items={item.children}
+                                                active={active}
+                                                onNavigate={handleNavigation}
+                                            />
+                                        );
+                                    }
+
                                     return (
-                                        <DesktopDropdown
+                                        <NavButton
                                             key={item.label}
-                                            title={item.label}
-                                            items={item.children}
+                                            label={item.label}
+                                            path={item.path!}
                                             active={active}
                                             onNavigate={handleNavigation}
                                         />
                                     );
-                                }
+                                });
+                            }
 
-                                return (
-                                    <NavButton
-                                        key={item.label}
-                                        label={item.label}
-                                        path={item.path!}
-                                        active={active}
-                                        onNavigate={handleNavigation}
-                                    />
-                                );
-                            });
-                        }
+                            return (
+                                <DesktopDropdown
+                                    key={group.title}
+                                    title={group.title}
+                                    items={group.items}
+                                    active={active}
+                                    onNavigate={handleNavigation}
+                                />
+                            );
+                        })}
+                    </div>
 
-                        return (
-                            <DesktopDropdown
-                                key={group.title}
-                                title={group.title}
-                                items={group.items}
-                                active={active}
-                                onNavigate={handleNavigation}
+                    {/* Right side */}
+                    <div className="flex shrink-0 items-center gap-2 md:gap-3 lg:gap-0">
+                        <ISOComponent />
+
+                        {/* Hamburger - Mobile + Tablet */}
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="relative z-20 flex h-8 w-8 shrink-0 flex-col items-center justify-center lg:hidden"
+                        >
+                            <span
+                                className={`absolute w-6 h-[2px] bg-black transition-all duration-300 ${isOpen ? "rotate-45" : "-translate-y-2"
+                                    }`}
                             />
-                        );
-                    })}
-                </div>
-
-                {/* Right side */}
-                <div className="flex items-center gap-2 md:gap-3 lg:gap-0">
-                    <ISOComponent />
-
-                    {/* Hamburger - Mobile + Tablet */}
-                    <button
-                        onClick={() => setIsOpen(!isOpen)}
-                        className="relative z-20 flex h-8 w-8 shrink-0 flex-col items-center justify-center lg:hidden"
-                    >
-                        <span
-                            className={`absolute w-6 h-[2px] bg-black transition-all duration-300 ${isOpen ? "rotate-45" : "-translate-y-2"
-                                }`}
-                        />
-                        <span
-                            className={`absolute w-6 h-[2px] bg-black transition-all duration-300 ${isOpen ? "opacity-0" : ""
-                                }`}
-                        />
-                        <span
-                            className={`absolute w-6 h-[2px] bg-black transition-all duration-300 ${isOpen ? "-rotate-45" : "translate-y-2"
-                                }`}
-                        />
-                    </button>
+                            <span
+                                className={`absolute w-6 h-[2px] bg-black transition-all duration-300 ${isOpen ? "opacity-0" : ""
+                                    }`}
+                            />
+                            <span
+                                className={`absolute w-6 h-[2px] bg-black transition-all duration-300 ${isOpen ? "-rotate-45" : "translate-y-2"
+                                    }`}
+                            />
+                        </button>
+                    </div>
                 </div>
             </div>
 

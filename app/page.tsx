@@ -12,6 +12,7 @@ import CarouselComponent from "@/src/components/Carousel/CarouselComponent";
 import ScrollFadeIn from "@/src/animated-components/ScrollFadeIn/ScrollFadeIn";
 import One from "@/public/carousel/one.svg";
 import CoreServicesScrollSection from "@/src/components/CoreServiceScrollSection/CoreServicesScrollSection";
+import PortfolioScrollSection from "@/src/components/PortfolioScrollSection/PortfolioScrollSection";
 
 export default function Home() {
   return (
@@ -47,14 +48,12 @@ export default function Home() {
         <TextBanner text="EMCUS Scanning & Mobility is a software-focused company specializing in top-tier software development tailored for the retail industry." />
         <h1 className="text-[21px] xl:text-[21px] text-[#2D7DBA] font-bold text-center w-full mt-10 lg:-mt-35 leading-none">RETAIL SYSTEMS PORTFOLIO</h1>
         {/* Portfolio Grid */}
-        <div className=" lg:mt-0 py-6">
-          <PortfolioComponent />
-        </div>
+        <PortfolioScrollSection />
 
         {/* Pin / Sticky Section Container */}
         <CoreServicesScrollSection />
 
-        <div className="mt-6 2xl:-mt-0 2xl:z-200 2xl:-mt-25">
+        <div className="mt-6 2xl:-mt-0 2xl:z-200 2xl:-mt-60">
           <h1 className="text-[21px] text-[#2D7DBA] font-bold text-center w-full">WHY EMCUS?</h1>
           <div className="flex flex-col md:flex-row justify-center gap-0 mt-3">
 

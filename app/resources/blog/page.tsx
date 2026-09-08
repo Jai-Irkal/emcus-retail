@@ -130,8 +130,8 @@ export default function Blogs() {
                     onClick={() => setSelectedCategory(category)}
                     className={`cursor-pointer shrink-0 whitespace-nowrap rounded-2xl border px-4 sm:px-5 py-2 text-sm sm:text-base lg:text-[14px] xl:text-[14px] font-medium transition-all
                       ${selectedCategory === category
-                        ? "bg-[#E34334] border-[#E34334] text-white"
-                        : "border-[#333333] text-[#333333] hover:border-[#e73331] hover:text-[#e73331]"
+                        ? "bg-[#2D7DBA] border-[#2D7DBA] text-white"
+                        : "border-[#333333] text-[#333333] hover:border-[#2D7DBA] hover:text-[#2D7DBA]"
                       }
                     `}
                   >

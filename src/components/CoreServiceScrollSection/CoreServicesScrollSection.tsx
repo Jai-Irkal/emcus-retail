@@ -133,7 +133,7 @@ export default function CoreServicesScrollSection() {
             </div>
 
             {/* Right Column: Tall Banner (Desktop Only) */}
-            <div className="hidden lg:flex justify-end items-center h-full max-h-[520px] pl-4 pr-0">
+            <div className="hidden lg:flex justify-end items-center h-full max-h-[360px] pl-4 pr-0">
               <div className="relative w-full h-full overflow-hidden rounded-l-[36px] shadow-xl">
                 <Image
                   src={CoreServiceBanner}

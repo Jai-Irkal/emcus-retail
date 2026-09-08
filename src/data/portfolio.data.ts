@@ -31,10 +31,10 @@ export const RETAIL_SYSTEMS_PORTFOLIO: RetailPortfolioItem[] = [
             'Tunnel Readers',
             'RFID Portal Solutions',
             'Smart Bins, Shelves & Cabinets',
-            'Printer & Encoder Integration',
-            'Tag Encoding & Decoding'
+            'Printer & Encoder Integration'
         ],
         rightData:[
+            'Tag Encoding & Decoding',
             'Tag Commissioning & Personalization',
             'Barcode, QR & NFC Solutions',
             'EPC/GS1/EPCIS Standards',
@@ -68,9 +68,10 @@ export const RETAIL_SYSTEMS_PORTFOLIO: RetailPortfolioItem[] = [
             'OTA Firmware Updates',
             'Software & Patch Deployment',
             'Device Security & Health Monitoring',
-            'Asset Management'
         ],
-        rightData:[]
+        rightData:[
+            'Asset Management'
+        ]
     },
     {
         id:4,
@@ -86,9 +87,10 @@ export const RETAIL_SYSTEMS_PORTFOLIO: RetailPortfolioItem[] = [
             'Data Engineering',
             'Business Intelligence & Dashboards',
             'Demand Forecasting',
-            'Predictive Analytics'
         ],
-        rightData:[]
+        rightData:[
+            'Predictive Analytics'
+        ]
     },
     {
         id:5,
@@ -140,9 +142,11 @@ export const RETAIL_SYSTEMS_PORTFOLIO: RetailPortfolioItem[] = [
             'Wireless Certification (Bluetooth SIG, Wi-Fi Alliance, NFC Forum)',
             'Payment & Security (PCI DSS, EMV)',
             'RFID & Auto-ID Standards (GS1, EPCglobal, EPCIS 2.0)',
-            'Cybersecurity Compliance (IEC 62443, ISO 27001, NIST)'
+            
         ],
-        rightData:[]
+        rightData:[
+            'Cybersecurity Compliance (IEC 62443, ISO 27001, NIST)'
+        ]
     },
     {
         id:8,

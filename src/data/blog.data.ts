@@ -11,8 +11,8 @@ export const BLOGS = [
     description:
       "Cycle counting is a labor-intensive task in both retail and back-office operations, essential for keeping inventory records accurate and up to date. While mobile RFID readers are commonly used for this process, they",
     image: Blog1,
-    categories:["Fire Panels", "Fire Systems"],
-    tags:["Fire panel", "zoning"]
+    categories: ["RFID", "Inventory Management", "Retail Technology"],
+    tags: ["Fixed RFID Reader", "Real-Time Inventory", "RFID Tracking", "Inventory Accuracy"]
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ export const BLOGS = [
     description:
       "As the retail and inventory landscape continues to evolve, an increasing number of electronic devices are being deployed in stores to prevent losses and gather shopper analytics.",
     image: Blog2,
-    categories:["Fire Panels", "Protocol Simulator", "Test Tools"],
-    tags:["Fire panel", "test tools", "testing tools"]
+    categories: ["EAS Devices", "Remote Access", "Web Configurator"],
+    tags: ["Remote Device Management", "Web Configuration", "EAS Systems", "Embedded Devices"]
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const BLOGS = [
     description:
       "Retailers increasingly rely on connected electronic equipment to enable loss prevention, customer insights, and seamless operations. As these deployments scale across hundreds or thousands of locations, managing this growing ",
     image: Blog3,
-    categories:["Fire Panels", "Fire Systems"],
-    tags:["fire safety", "standards"]
+    categories: ["Fleet Management", "Retail Technology", "Remote Device Management"],
+    tags: ["Device Management", "Remote Monitoring", "Asset Tracking", "Retail Equipment"]
   },
 ];
