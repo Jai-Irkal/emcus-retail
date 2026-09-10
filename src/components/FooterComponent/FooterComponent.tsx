@@ -176,7 +176,7 @@ const FooterComponent = () => {
                                     className="hidden md:block md:h-8 md:w-8 object-contain shrink-0"
                                 />
                                 <a
-                                    href="https://www.linkedin.com/company/emcustechnologysolutions/"
+                                    href="https://www.linkedin.com/company/emcus-retail"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="cursor-pointer hover:underline text-sm md:text-base"
