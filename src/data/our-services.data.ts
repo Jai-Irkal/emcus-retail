@@ -144,22 +144,6 @@ export const OUR_SERVICES: ServiceItem[] = [
     },
     {
         id:6,
-        title:"CERTIFICATION SUPPORT/ STANDARDS EXPERTISE",
-        image: CertificationSupportImg,
-        mobileImage:CertificationSupportMoblieImg,
-        leftItems: [
-            "UL864",
-            "ULC-S527",
-            "ULC-S559",
-            "EN 54 Series",
-            "AS 7240 Series",
-            "NFPA 72"
-        ],
-        rightItems: [
-        ]
-    },
-    {
-        id:7,
         title:"AUTOMATION TESTING SERVICES",
         image: AutomationTestingServicesImg,
         mobileImage:AutomationTestingServicesMoblieImg,
@@ -179,7 +163,7 @@ export const OUR_SERVICES: ServiceItem[] = [
         ]
     },
     {
-        id:8,
+        id:7,
         title:"CONNECTIVITY & IoT ENGINEERING SERVICES",
         image: ConnectivityIoTEngineeringServicesImg,
         mobileImage:ConnectivityIoTEngineeringServicesMoblieImg,
@@ -201,7 +185,7 @@ export const OUR_SERVICES: ServiceItem[] = [
         ]
     },
     {
-        id:9,
+        id:8,
         title:"UI/UX DESIGN SERVICES (MOBILE/WEB/DESKTOP/EMBEDDED UI)",
         image: UIUXDesignServicesImg,
         mobileImage:UIUXDesignServicesMoblieImg,
@@ -222,7 +206,7 @@ export const OUR_SERVICES: ServiceItem[] = [
         ]
     },
     {
-        id:10,
+        id:9,
         title:"MECHANICAL INDUSTRIAL DESIGN (ID) SERVICES",
         image: MechanicalIndustrialDesignServicesImg,
         mobileImage:MechanicalIndustrialDesignServicesMoblieImg,
