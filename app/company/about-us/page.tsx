@@ -45,7 +45,7 @@ export default function AboutUs() {
         <h1 className="text-[21px] text-[#2D7DBA] font-bold text-center w-full mt-8 px-10">ABOUT EMCUS</h1>
         <div className="w-full flex justify-center mt-1">
           <span className="px-10 text-justify lg:text-[18px] text-[#333333] font-regular">
-            EMCUS Technology Solutions is a specialized fire & safety engineering partner for OEMs, delivering end-to-end design & development of fire & safety systems. With certification-aware engineering and expertise in UL & EN-54 readiness, we support customers throughout the product development & certification journey, accelerating the delivery of reliable, standards-ready fire & safety products.
+            EMCUS Technology Solutions is a partner that specializes in designing and developing technologies for retail using solutions provided by OEMs and solution providers. We design and develop technologies for retail that include RFIDs, Auto-IDs, and POS solutions as well as IoT, mobility, and smart stores solutions. We offer services throughout the entire product lifecycle starting from the concept to development and deployment.
           </span>
         </div>
         <div className="lg:px-10 px-4 mt-6">
