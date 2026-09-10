@@ -13,6 +13,7 @@ import ScrollFadeIn from "@/src/animated-components/ScrollFadeIn/ScrollFadeIn";
 import One from "@/public/carousel/one.svg";
 import CoreServicesScrollSection from "@/src/components/CoreServiceScrollSection/CoreServicesScrollSection";
 import PortfolioScrollSection from "@/src/components/PortfolioScrollSection/PortfolioScrollSection";
+import { Analytics } from "@vercel/analytics/next"
 
 export default function Home() {
   return (
@@ -74,6 +75,7 @@ export default function Home() {
         </div>
         <FooterComponent />
       </main>
+      <Analytics/>
     </div>
   );
 }
