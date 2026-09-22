@@ -5,7 +5,7 @@ import React from 'react'
 import Image from 'next/image';
 import HeaderComponent from '@/src/components/HeaderComponent/HeaderComponent';
 import Banner from "@/public/banners/what-we-do-banner.svg"
-import VivekBanner from "@/public/vivek/Hero_WhatWeDo_TechnologyExpertise.webp";
+import VivekBanner from "@/public/vivek/hero_WhatWeDo_TechExpertise.webp";
 import { TECHNOLOGY_TOOLS } from '@/src/data/technology-skillset.data';
 import TechnologyExpertiseCard from '@/src/components/cards/TechnologyExpertiseCard';
 import { TECHNOLOGY_EXPERTISE } from '@/src/data/technology-expertise.data';

@@ -1,6 +1,6 @@
 import HeaderComponent from "@/src/components/HeaderComponent/HeaderComponent";
 import HomeBanner from "@/public/banners/home-banner.jpeg"
-import VivekBanner from "@/public/vivek/Hero_WhatWeDo_Services.webp"
+import VivekBanner from "@/public/vivek/hero_WhatWeDo_Services.webp"
 import Image from "next/image";
 import FooterComponent from "@/src/components/FooterComponent/FooterComponent";
 import { OUR_SERVICES } from "@/src/data/our-services.data";
