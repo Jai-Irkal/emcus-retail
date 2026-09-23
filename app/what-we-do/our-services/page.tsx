@@ -14,7 +14,7 @@ export default function WhatWeDo() {
         <HeaderComponent active="WHAT WE DO" />
         <div className="relative w-full h-[300px] lg:h-[480px] 2xl:h-[600px] 2xl:bottom-0">
           <Image
-            src={VivekBanner}
+            src="/vivek/hero_WhatWeDo_Services.webp"
             alt="Banner"
             fill
             priority
